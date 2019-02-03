@@ -1,3 +1,9 @@
 = summary_info_for_projects
 
-Description goes here
+Install: 
+
+1.Copy plugin directory into #{RAILS_ROOT}/plugins.
+
+2.bundle exec rake redmine:plugins:migrate RAILS_ENV=production
+
+3.set permission roles your-redmine/settings/plugin/summary_info_for_projects
