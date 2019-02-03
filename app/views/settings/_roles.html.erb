@@ -1,0 +1,9 @@
+<p>Роли, которые могут видеть сводную информацию по проектам</p>
+<p>
+  <% Role.sorted.each do |role| %>
+
+    <label><%= role.name %></label>
+    <%= check_box_tag "settings[#{role.name}]", true, @settings[role.name] %>
+    <br>
+  <% end %>
+</p>
